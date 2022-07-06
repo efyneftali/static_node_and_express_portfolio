@@ -1,0 +1,27 @@
+{
+  "name": "static_node_and_express_portfolio",
+  "version": "1.0.0",
+  "description": "Propofolio site using Js, node, and express to handle the dynamic portfolio app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efyneftali/static_node_and_express_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efyneftali/static_node_and_express_portfolio/issues"
+  },
+  "homepage": "https://github.com/efyneftali/static_node_and_express_portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2"
+  }
+}
