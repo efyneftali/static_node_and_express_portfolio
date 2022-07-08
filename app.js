@@ -1,15 +1,9 @@
 const express = require('express')
-
 const bodyParser = require('body-parser')
-//const cookieParser = require('cookie-parser')
+
 const app = express();
 const {projects} = require('./projectData.json')
-//const { projects} = data
 
-//console.log(projects)
-console.log("break here")
-console.log(projects[0].image_urls)
-console.log(projects[1].project_name)
 app.use('/static', express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: false}))
@@ -19,17 +13,17 @@ app.use(bodyParser.urlencoded({ extended: false}))
 app.use('/static', express.static('public'))
 app.set('view engine', 'pug')
 
-app.get('/', (req, res,next) => {
+app.get('/', (req, res) => {
     res.locals.projects = projects;
 	res.render('index', projects)
-    //res.render('about')
 });
 
-// app.get('/project:id', (req, res,next) => {
-//     const id = req.params.id
-// 	res.locals.projects = projects[id]
-//     res.render('project',projects)
-// });
+app.get('/project/:id', (req, res) => {
+    const id = req.params.id
+	res.locals.projects = projects[id]
+    res.render('project')
+});
+
 app.get('/about', (req, res,next) => {
     res.render('about')
 });
