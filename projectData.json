@@ -7,7 +7,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://efyneftali.github.io/a_random_quote_generator-v1/",
             "github_link": "https://github.com/efyneftali/a_random_quote_generator-v1",
-            "image_urls": ["project1-01.png","project1-02.png"]
+            "image_urls": ["/static/img/project1-01.png","/static/img/project1-02.png"]
         },
         {
             "id": "1",
@@ -16,16 +16,16 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://efyneftali.github.io/data-pagination-and-filtering-v1/",
             "github_link": "https://github.com/efyneftali/data-pagination-and-filtering-v1",
-            "image_urls":  ["project2-01.png","project2-02.png"]
+            "image_urls":  ["/static/img/project2-01.png","/static/img/project2-02.png"]
         },
         {
             "id": "2",
-            "project_name": "FSJS Techdegree Project 3: ",
+            "project_name": "FSJS Techdegree Project 3: Accessible Form",
             "description": "Form with validation and user accisibility friendly",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://efyneftali.github.io/interactive-form-v3/",
             "github_link": "https://github.com/efyneftali/interactive-form-v3",
-            "image_urls": ["project3-01.png","project3-02.png"]
+            "image_urls": ["/static/img/project3-01.png","/static/img/project3-02.png"]
         },
         {
             "id": "3",
@@ -34,7 +34,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://efyneftali.github.io/unit4-oop_game/",
             "github_link": "https://github.com/efyneftali/unit4-oop_game",
-            "image_urls":  ["project4-01.png","project4-02.png","project4-03.png"]
+            "image_urls":  ["/static/img/project4-01.png","/static/img/project4-02.png","/static/img/project4-03.png"]
         },
         {
             "id": "4",
@@ -43,7 +43,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://efyneftali.github.io/unit5-API-directoryProject/",
             "github_link": "https://github.com/efyneftali/unit5-API-directoryProject",
-            "image_urls":  ["project5-01.png","project5-02.png"]
+            "image_urls":  ["/static/img/project5-01.png","/static/img/project5-02.png"]
         }
     ]
 }
