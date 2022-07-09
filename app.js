@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
-const app = express();
+const app = express()
 const {projects} = require('./projectData.json')
 
 app.use(bodyParser.urlencoded({ extended: false}))
@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 	res.render('index', projects)
 })
 
-
 app.get('/project/:id', (req, res, next) => {
     const id = req.params.id
     if (projects[id] !== undefined) {
@@ -22,7 +21,7 @@ app.get('/project/:id', (req, res, next) => {
         res.locals.projects = projects[id]
         res.render('project')
     } else {
-        // otherwise, pass in error
+        // otherwise, pass error to err middleware
         const err = new Error();
         err.message = "Well this is awkward.......Sorry, this project does not exist";
         err.status = 404
