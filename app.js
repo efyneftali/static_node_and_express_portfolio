@@ -22,18 +22,17 @@ app.get('/project/:id', (req, res) => {
 
 app.get('/about', (req, res,next) => {
     res.render('about')
+    
 });
-
 app.use((req,res,next) =>{
-	const err = new Error('Something went wrong');
-	res.locals.error = err;
-	err.status = 404;
-	res.render('error');
-});
-
+	const err = new Error('Page Not Found')
+    err.status = 404
+    next(err)
+})
 app.use((err, req, res, next) => {
     res.locals.error = err
-    console.log(`An error has occured: ${err.status}`.red);
+    res.status(err.status)
+    console.log(`An error has occured: ${err.status}`)
     res.render('error') 
 });
 
